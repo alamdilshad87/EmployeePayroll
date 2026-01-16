@@ -1,0 +1,33 @@
+.header {
+  padding: 15px 0;
+  background-color: #ffffff;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-content {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  gap: 10px;
+}
+
+.logo-content img {
+  height: 45px;
+  width: 45px;
+}
+
+.emp-text {
+  font-size: 20px;
+  color: #82a70c;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.emp-payroll {
+  color: #42515f;
+}
