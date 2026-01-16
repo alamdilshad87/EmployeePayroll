@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee List</title>
+  <link rel="stylesheet" href="../css/payroll-list.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-content">
+    <div class="logo-content">
+      <img src="../assests/images/app.png">
+      <div>
+        <span class="emp-text">EMPLOYEE</span><br>
+        <span class="emp-text emp-payroll">PAYROLL</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="main-content">
+
+  <!-- Page Header -->
+  <div class="emp-detail-header">
+    <span class="emp-count">Employee Details</span>
+
+    <div style="display:flex; align-items:center; gap:12px;">
+      <!-- Search -->
+      <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search">
+      </div>
+
+      <!-- Add User -->
+      <a href="../index.html" class="add-button">+ Add User</a>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>NAME</th>
+        <th>GENDER</th>
+        <th>DEPARTMENT</th>
+        <th>SALARY</th>
+        <th>START DATE</th>
+      </tr>
+    </thead>
+    <tbody id="tableBody"></tbody>
+  </table>
+
+</div>
+
+<script src="../js/payroll-list.js"></script>
+</body>
+</html>

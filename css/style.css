@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
 .header {
   padding: 15px 0;
   background-color: #ffffff;
@@ -6,13 +13,12 @@
 .header-content {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .logo-content {
+  width: 80%;
   display: flex;
   align-items: center;
-  width: 80%;
   gap: 10px;
 }
 
@@ -23,56 +29,44 @@
 
 .emp-text {
   font-size: 20px;
-  color: #82a70c;
-  font-weight: 600;
-  text-transform: capitalize;
-}
-
-.emp-payroll {
+  font-weight: 500;
   color: #42515f;
 }
 
-/* UC-2: Form container */
+.emp-payroll {
+  font-weight: 600;
+  color: #82a70c;
+}
+
 .form-content {
-  min-height: calc(100% - 80px);
   background-color: #f7f7f7;
+  min-height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Form card */
 .form {
   width: 65%;
   max-width: 650px;
-  padding: 44px 60px;
   background: #ffffff;
-  box-shadow: 0px 3px 6px #00000029;
-  border: 1px solid #f5f5f5;
+  padding: 40px 60px;
   border-radius: 8px;
+  box-shadow: 0px 3px 6px #00000029;
 }
 
-
-/* Form header */
 .form-head {
-  font: normal normal bold 24px/37px Roboto;
-  letter-spacing: 0px;
+  font-size: 24px;
+  font-weight: 600;
   color: #42515f;
-  text-transform: capitalize;
-  opacity: 1;
-  padding-bottom: 20px;
+  margin-bottom: 25px;
 }
 
-/* Row layout */
 .row-content {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
-
-/* Label */
 .label {
   min-width: 140px;
 }
@@ -80,174 +74,91 @@
 .text {
   font-size: 16px;
   color: #42515f;
-  opacity: 1;
-  font-family: Roboto;
 }
 
-/* Input */
 .input {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  resize: vertical;
 }
 
-/* UC-3: Profile image selection */
 .profile-radio-content {
   display: flex;
   gap: 18px;
-  align-items: center;
-}
-
-
-.profile-radio-content > label {
-  display: flex;
-  align-items: center;
 }
 
 .profile {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  margin-left: 12px;
+  margin-left: 8px;
 }
 
-.gender-group {
-  display: flex;
-  gap: 18px;
-  align-items: center;
-}
-
-
-/* UC-4: Salary dropdown */
-.select {
-  width: 70%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background-color: #ffffff;
-}
-
-/* UC-5: Start date dropdowns */
-.date-select {
-  width: auto;
-  margin-right: 12px;
-}
-
-/* UC-6: Notes textarea */
-textarea.input {
-  resize: none;
-}
-
-/* Button container */
 .button-parent {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
-/* Common button */
-/* UC-6: Buttons (Final UI fix) */
 .button {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
   padding: 10px 22px;
   border: none;
   border-radius: 5px;
+  font-size: 15px;
   cursor: pointer;
-  min-width: 120px;
-  outline: none;
-  box-shadow: none;
 }
 
-/* Cancel button */
-.cancelButton {
-  background-color: #e2e2e2;
-  color: #42515f;
-}
-
-/* Reset button */
+.cancelButton,
 .resetButton {
   background-color: #e2e2e2;
   color: #42515f;
-  margin-right: 10px;
 }
 
-/* Submit button */
 .submitButton {
   background-color: #82a70c;
   color: #ffffff;
 }
 
-/* Hover polish (optional but matches UI) */
-.button:hover {
-  opacity: 0.9;
-}
-
-@media only screen and (max-width: 960px) {
-
+@media (max-width: 900px) {
   .form {
-    width: 80%;
-    padding: 32px 40px;
+    width: 85%;
+    padding: 30px;
   }
 
   .row-content {
     flex-direction: column;
-    align-items: flex-start;
   }
 
   .label {
-    margin-bottom: 8px;
-  }
-
-  .input,
-  .select {
-    width: 100%;
-  }
-
-  .profile-radio-content,
-  .gender-group,
-  .department-group {
-    flex-wrap: wrap;
-  }
-
-  .button-parent {
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    gap: 16px;
-  }
-
-  .button-group {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 6px;
   }
 }
-@media only screen and (max-width: 600px) {
 
-  .form {
-    width: 90%;
-    padding: 24px;
-  }
+.select {
+  height: 42px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #42515f;
+  background-color: #ffffff;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath fill='%23999' d='M0 0l5 6 5-6z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+}
 
-  .profile-radio-content img {
-    width: 36px;
-    height: 36px;
-  }
+/* Space between Day / Month / Year */
+.date-select {
+  margin-right: 10px;
+  min-width: 100px;
+}
 
-  .date-select {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-
-  .button {
-    width: 100%;
-  }
-
-  .button-group {
-    flex-direction: column;
-    gap: 12px;
-  }
+/* Remove margin from last select */
+.date-select:last-child {
+  margin-right: 0;
 }
