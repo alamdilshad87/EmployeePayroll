@@ -118,3 +118,9 @@
   border-radius: 4px;
   background-color: #ffffff;
 }
+
+/* UC-5: Start date dropdowns */
+.date-select {
+  width: auto;
+  margin-right: 12px;
+}
