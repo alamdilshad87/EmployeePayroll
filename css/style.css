@@ -185,3 +185,69 @@ textarea.input {
 .button:hover {
   opacity: 0.9;
 }
+
+@media only screen and (max-width: 960px) {
+
+  .form {
+    width: 80%;
+    padding: 32px 40px;
+  }
+
+  .row-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .label {
+    margin-bottom: 8px;
+  }
+
+  .input,
+  .select {
+    width: 100%;
+  }
+
+  .profile-radio-content,
+  .gender-group,
+  .department-group {
+    flex-wrap: wrap;
+  }
+
+  .button-parent {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .button-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (max-width: 600px) {
+
+  .form {
+    width: 90%;
+    padding: 24px;
+  }
+
+  .profile-radio-content img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .date-select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
