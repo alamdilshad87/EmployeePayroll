@@ -67,9 +67,10 @@
 .row-content {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px;
-  align-items: center;
+  align-items: flex-start;
+  margin-bottom: 22px;
 }
+
 
 /* Label */
 .label {
@@ -95,8 +96,10 @@
 /* UC-3: Profile image selection */
 .profile-radio-content {
   display: flex;
-  flex-direction: row;
+  gap: 18px;
+  align-items: center;
 }
+
 
 .profile-radio-content > label {
   display: flex;
@@ -109,6 +112,13 @@
   border-radius: 50%;
   margin-left: 12px;
 }
+
+.gender-group {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
 
 /* UC-4: Salary dropdown */
 .select {
