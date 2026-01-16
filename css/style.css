@@ -124,3 +124,54 @@
   width: auto;
   margin-right: 12px;
 }
+
+/* UC-6: Notes textarea */
+textarea.input {
+  resize: none;
+}
+
+/* Button container */
+.button-parent {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Common button */
+/* UC-6: Buttons (Final UI fix) */
+.button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 120px;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Cancel button */
+.cancelButton {
+  background-color: #e2e2e2;
+  color: #42515f;
+}
+
+/* Reset button */
+.resetButton {
+  background-color: #e2e2e2;
+  color: #42515f;
+  margin-right: 10px;
+}
+
+/* Submit button */
+.submitButton {
+  background-color: #82a70c;
+  color: #ffffff;
+}
+
+/* Hover polish (optional but matches UI) */
+.button:hover {
+  opacity: 0.9;
+}
